@@ -1,0 +1,35 @@
+block configuracion
+	include ../configuracion/variable.jade
+<!DOCTYPE html>
+html
+	head
+		title Instituto Tecnológico Superio de los Ríos 
+		meta(charset="UTF-8")
+		meta(name="description" content="informacion para el buscador")
+		link(rel="icon" href="imagen.png")
+		link(rel="stylesheet" href="CSS/ed-grid.min.css")
+		link(rel="stylesheet" href="CSS/ed-grid.css")
+		link(rel="stylesheet" href="CSS/estilo.css")
+		script(type="text/javascript" src="JS/mi_script.js")
+	body.cuerpo
+		header.ed-container#arriba
+			.ed-item.s-20
+				include ../bloques/logotipo.jade
+			nav
+				.ed-item.s-offset-2-6
+					include ../bloques/Menu.jade
+		div.bajar
+			a(href="#abajo") Bajar
+		#imagen.ed-container
+			.ed-item
+				block imagen
+		.ed-container
+			main.ed-item.s-75
+				block main
+			aside.ed-item.s-25
+				block aside
+			div.subir
+				a(href="#arriba") Subir
+		footer#abajo.ed-container
+			.ed-item
+				block footer

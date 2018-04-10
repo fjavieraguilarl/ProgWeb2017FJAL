@@ -1,0 +1,101 @@
+.ed-menu a{
+text-transform: uppercase;
+background: #2ECCFA;
+}
+
+.ed-menu a:hover{
+background-color: #0174DF;
+color: white;
+border-radius: 10px;
+transition: all 0.9s ease;
+box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+.cuerpo{
+	background: #2ECCFA;
+}
+.subir{   
+	right:2px;
+	bottom: 2px;
+	position: fixed;
+}
+.subir a{
+   display:block;
+   color: #CC0000;
+   width:88px;
+   height:30px;
+   text-decoration:none;
+   font-weight:bold;
+}
+
+.subir a:hover{
+   color:#0B55C4;
+   bottom: 15px;
+   background: url(../Imagen/farriba.gif) no-repeat;
+}
+.bajar{
+	right:50px;
+	bottom: 550px;
+	position: fixed;
+}
+.bajar a{
+   display:block;
+   color: #CC0000;
+   width:35px;
+   height:30px;
+   bottom: 115px;
+   right:10px;
+   text-decoration:none;
+   font-weight:bold;
+}
+.bajar a:hover{
+   color:#0B55C4;
+   background: url(../Imagen/fabajo.gif) no-repeat;
+   bottom: 15px;
+}
+.img_evo{
+	margin: 0 auto;
+	text-align: center;
+}
+.ed-container{
+	text-align: justify;
+	line-height: 24px;
+}
+.imgblog{
+   width:288px;
+   height:20px;
+   position: absolute;
+   top: 200px;
+   right: 650px;
+   float: left;
+   
+}
+.face{
+   width:28px;
+   height:10px;
+}
+.linked{
+   width:28px;
+   height:10px;
+   position: absolute;
+   right: 1200px;
+   top: 213px;
+}
+.texto{
+   position: all;
+   top: 600px;
+}
+
+footer{
+   background: #585858;
+   text-align: center;
+   font-size: .9em;
+   color: #fff;
+   padding-bottom: 1.5em;
+   padding-top: 1.5em;
+   margin-top: 4em;
+}
+#imgb{
+   width:350px;
+   height:500px;
+}

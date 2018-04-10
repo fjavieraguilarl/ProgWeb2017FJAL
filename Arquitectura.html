@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arquitectutra</title>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="informacion para el buscador"/>
+    <link rel="icon" href="imagen.png"/>
+    <link rel="stylesheet" href="CSS/ed-grid.min.css"/>
+    <link rel="stylesheet" href="CSS/ed-grid.css"/>
+    <link rel="stylesheet" href="CSS/estilo.css"/>
+    <script type="text/javascript" src="JS/mi_script.js"></script>
+  </head>
+  <body class="cuerpo">
+    <header class="ed-container" id="arriba">
+      <div class="ed-item s-20"><img src="Imagen/lol.jpg"/></div>
+      <nav>
+        <div class="ed-item s-offset-2-6">
+          <ul class="ed-menu l-horizontal s-80 expand-submenu">
+            <li><a href="index.html">inicio</a></li>
+            <li><a href="evolucion.html">evolucion
+                <ul>
+                  <li><a href="/evolucion.html#awebb1">WEB 1.0</a></li>
+                  <li><a href="/evolucion.html#awebb2">WEB 2.0</a></li>
+                  <li><a href="/evolucion.html#awebb3">WEB 3.0</a></li>
+                  <li><a href="/evolucion.html#awebb4">WEB 4.0</a></li>
+                </ul></a></li>
+            <li><a href="Arquitectura.html">Arquitectura
+                <ul>
+                  <li><a href="Arquitectura.html#vtjs">Ventajas</a></li>
+                </ul></a></li>
+            <li><a href="Tecnologias.html">Tecnologias</a></li>
+            <li><a href="Planificacion.html">Planificacion</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="bajar"><a href="#abajo">Bajar</a></div>
+    <div class="ed-container" id="imagen">
+      <div class="ed-item">
+      </div>
+    </div>
+    <div class="ed-container">
+      <main class="ed-item s-75">
+        <h1>2.1 Arquitectura de las aplicaciones Web.</h1>
+        <p>Una aplicación Web  es  proporcionada  por  un  servidor  Web  y  utilizada  por  usuarios  que  se Conectan desde cualquier punto vía clientes Web (browsers o navegadores). La arquitectura de un Sitio Web tiene tres componentes principales:</p>
+        <ul>
+          <li>Un servidor Web</li>
+          <li>Una conexión de red</li>
+          <li>Uno o más clientes</li>
+        </ul>
+        <p>El servidor Web distribuye páginas de información formateada a los clientes que las solicitan. Los requerimientos son hechos a través de una conexión de red, y para ello se usa el protocolo HTTP. Una vez que se solicita esta petición mediante el protocolo HTTP y la recibe el servidor Web, éste localiza la página Web en su sistema de archivos y la envía de vuelta al navegador que la solicitó.</p>
+        <p>Las aplicaciones Web están basadas en el modelo Cliente/Servidor que gestionan servidores web, y que utilizan como interfaz páginas web.</p>
+        <div class="img_evo"><img Src="Imagen/aqui2.png"/></div>
+        <p>Las páginas Web son el componente principal de una aplicación o sitio Web. Los browsers piden páginas  (almacenadas  o creadas  dinámicamente) con  información  a  los  servidores  Web.  En algunos  ambientes  de  desarrollo de  aplicaciones  Web, las  páginas  contienen  código  HTML  y scripts dinámicos, que son ejecutados por el servidor antes de entregar la página.</p>
+        <p>Una vez que se entrega una página, la conexión entre el browser y el servidor Web se rompe, es decir que la lógica del negocio en el servidor solamente se activa por la ejecución de los scripts de las páginas solicitadas por el browser (en el servidor, no en el cliente). Cuando el browser ejecuta un script en el cliente, éste no tiene acceso directo a los recursos del servidor. Hay  otros  componentes  que no  son  scripts, como los  applets  (una aplicación  especial  que  se ejecuta  dentro de  un  navegador)  o los  componentes  ActiveX. Los  scripts  del  cliente  son  por lo general código JavaScript o VBSscript, mezclados con código HTML.</p>
+        <h4>Las diferentes capas suelen ser:</h4>
+        <ul>
+          <li>Capa 1: Cliente de aplicación: Navegador Web</li>
+          <li>Capa 2 : Servidor de Aplicaciones: Apache, Servidor Tomcat con servlet’s</li>
+          <li>Capa 3 : Servidor de Datos: base de datos, servidor SMTP…</li>
+        </ul><br/>
+        <div id="vtjs">
+          <h4>Ventajas de la arquitectura de tres capas:</h4>
+        </div>
+        <ul>
+          <li>Las llamadas de la interfaz del usuario en la estación de trabajo, al servidor de capa intermedia, son más flexiles que en el diseño de dos capas, ya que la estación solo necesita transferir parámetros a la capa intermedia.</li>
+          <li>Con la arquitectura de tres capas, la interfaz del cliente no es requerida para comprender o comunicarse con el receptor de los datos. Por lo tanto, esa estructura de los datos puede ser modificada sin cambiar la interfaz del usuario en la PC.</li>
+          <li>El código de la capa intermedia puede ser reutilizado por múltiples aplicaciones si está diseíado en formato modular.</li>
+          <li>La separación de roles en tres capas, hace más fácil reemplazar o modificar una capa sin afectar a los módulos restantes.</li>
+          <li>Desventajas de las Arquitecturas de Tres Capas y asadas en Web</li>
+          <li>Los ambientes de tres capas pueden incrementar el tráfico en la red y requiere más balance de carga u tolerancia a las fallas.</li>
+          <li>Los exploradores actuales no son todos iguales.</li>
+          <li>La estandarización entre diferentes proveedores ha sido lenta en desarrollarse. Muchas organizaciones son forzadas a escoger uno en lugar de otro, mientras que cada uno ofrece sus propias y distintas ventajas.</li>
+        </ul>
+        <div class="img_evo"><img Src="Imagen/arqui1.png"/></div>
+      </main>
+      <aside class="ed-item s-25">
+      </aside>
+      <div class="subir"><a href="#arriba">Subir</a></div>
+    </div>
+    <footer class="ed-container" id="abajo">
+      <div class="ed-item">
+        <p>Practica de HTML5 y jade</p>
+        <p>Periodo Enero- Agosto 2017</p>
+      </div>
+    </footer>
+  </body>
+</html>

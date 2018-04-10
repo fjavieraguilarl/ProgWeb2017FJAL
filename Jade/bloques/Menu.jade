@@ -1,0 +1,19 @@
+ul.ed-menu.l-horizontal.s-80.expand-submenu
+		each a in url
+			if a=="inicio"
+				li: a(href="index.html") #{a}
+			if a=="evolucion"
+				li: a(href="evolucion.html") evolucion
+					ul
+						li: a(href="/evolucion.html#awebb1") WEB 1.0
+						li: a(href="/evolucion.html#awebb2") WEB 2.0
+						li: a(href="/evolucion.html#awebb3") WEB 3.0
+						li: a(href="/evolucion.html#awebb4") WEB 4.0
+			if a=="Arquitectura"
+				li: a(href="Arquitectura.html") Arquitectura
+					ul
+						li: a(href="Arquitectura.html#vtjs") Ventajas
+			if a=="Tecnologias"
+				li: a(href="Tecnologias.html") Tecnologias
+				li: a(href="Planificacion.html") Planificacion
+				li: a(href="Blog.html") Blog
